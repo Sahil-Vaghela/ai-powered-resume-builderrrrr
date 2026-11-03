@@ -1,0 +1,95 @@
+{
+  "titles": [
+    "Full Stack Software Engineer",
+    "Frontend Developer",
+    "Backend Engineer",
+    "Software Engineer",
+    "DevOps & Cloud Engineer",
+    "Data Scientist / Analyst",
+    "Mobile App Developer (iOS / Android)",
+    "UI/UX Designer & Engineer",
+    "Product Manager",
+    "Cybersecurity Specialist",
+    "QA / Automation Engineer",
+    "Computer Science Graduate"
+  ],
+  "experienceLevels": [
+    { "value": "fresher", "label": "Student / Recent Graduate (Fresher)", "desc": "0-1 years of experience or entering the tech workforce" },
+    { "value": "junior", "label": "Early Career / Junior Professional", "desc": "1-3 years of hands-on professional industry experience" },
+    { "value": "mid", "label": "Mid-Level Professional", "desc": "3-5 years with proven track record and project leadership" },
+    { "value": "senior", "label": "Senior / Lead Specialist", "desc": "5+ years leading architectures, systems, or teams" }
+  ],
+  "summaryTemplates": [
+    {
+      "category": "Fresher / Graduate",
+      "level": "fresher",
+      "text": "Motivated Computer Science graduate with a strong foundation in modern software development, data structures, and web technologies. Passionate about building performant, user-centric applications and eager to contribute to collaborative engineering teams."
+    },
+    {
+      "category": "Fresher - Frontend Focus",
+      "level": "fresher",
+      "text": "Aspiring Frontend Developer proficient in React, TypeScript, and modern CSS frameworks. Demonstrated ability to translate design mockups into responsive, accessible web interfaces through academic and open-source projects."
+    },
+    {
+      "category": "Experienced Full Stack",
+      "level": "experienced",
+      "text": "Results-driven Software Engineer with proven experience designing and scaling web applications, RESTful microservices, and modern frontend architectures. Adept in TypeScript, React, Node.js, and cloud deployments with a focus on code quality and performance."
+    },
+    {
+      "category": "Experienced Backend / Cloud",
+      "level": "experienced",
+      "text": "Backend Engineer specializing in distributed systems, database optimization, and cloud infrastructure. Track record of improving system uptime, reducing API latency, and driving automated CI/CD pipelines in high-throughput environments."
+    },
+    {
+      "category": "Product-Minded Engineer",
+      "level": "experienced",
+      "text": "Passionate Software Engineer combining technical expertise with a keen product sense. Experienced in rapid prototyping, cross-functional agile development, and delivering high-impact features that elevate user satisfaction and business growth."
+    }
+  ],
+  "degrees": [
+    "Bachelor of Science in Computer Science",
+    "Bachelor of Technology in Information Technology",
+    "Bachelor of Science in Software Engineering",
+    "Master of Science in Computer Science",
+    "Bachelor of Computer Applications (BCA)",
+    "Bachelor of Engineering in Electrical Engineering",
+    "Bachelor of Science in Data Science"
+  ],
+  "employmentTypes": [
+    "Full-time",
+    "Part-time",
+    "Contract",
+    "Internship",
+    "Freelance"
+  ],
+  "responsibilitiesSuggestions": [
+    "Architected and implemented responsive web applications using React, TypeScript, and Tailwind CSS, improving load speed by 35%.",
+    "Designed and maintained resilient RESTful microservices with Node.js and PostgreSQL handling 50k+ daily requests.",
+    "Integrated automated CI/CD pipelines via GitHub Actions, reducing deployment cycle times by 40%.",
+    "Collaborated with product designers and backend engineers in bi-weekly agile sprints to launch core client-facing features.",
+    "Mentored junior engineers and conducted peer code reviews ensuring rigorous standards for test coverage and security.",
+    "Refactored legacy codebases to modern standards, decreasing technical debt and cutting client error rates by 25%."
+  ],
+  "projectContributions": [
+    "Built an end-to-end web application with real-time state synchronization, local caching, and responsive design.",
+    "Engineered robust database schemas and optimized complex SQL queries to maintain sub-100ms response times.",
+    "Implemented automated unit and end-to-end test suites achieving 85%+ code coverage.",
+    "Deployed containerized application onto AWS / Docker with zero-downtime rolling updates."
+  ],
+  "languagesList": [
+    "English (Fluent / Professional)",
+    "Spanish (Conversational)",
+    "French (Basic)",
+    "German (Intermediate)",
+    "Mandarin (Basic)",
+    "Hindi (Native / Fluent)"
+  ],
+  "interestsList": [
+    "Open Source Contributing",
+    "Algorithms & Competitive Programming",
+    "Tech Blogging & Mentoring",
+    "Cloud Computing & Home Labs",
+    "UI Design & Typography",
+    "Robotics & IoT"
+  ]
+}

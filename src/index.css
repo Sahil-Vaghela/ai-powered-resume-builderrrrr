@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #E9EAF2;
+  --surface: #E9EAF2;
+  --surface-secondary: #F3F3F8;
+  --doc-bg: #FFFFFF;
+  --primary: #7776B8;
+  --secondary: #A6A5D5;
+  --text-main: #34364A;
+  --text-muted: #7E8494;
+  --success: #6D9B83;
+  --error: #C77D86;
+  --shadow-dark: #C8CAD4;
+  --shadow-light: #FFFFFF;
+  font-family: 'Inter', 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: #E9EAF2;
+  color: #34364A;
+  font-family: 'Inter', 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Responsive typography using clamp() */
+.text-clamp-heading {
+  font-size: clamp(22px, 3.8vw, 38px);
+  line-height: 1.18;
+}
+
+.text-clamp-subheading {
+  font-size: clamp(13px, 1.4vw, 16px);
+  line-height: 1.45;
+}
+
+.text-clamp-body {
+  font-size: clamp(13px, 1.1vw, 15px);
+  line-height: 1.5;
+}
+
+/* Mobile safe area utility */
+.safe-pb {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+/* Neumorphic Shadow System */
+.neu-raised {
+  background-color: #E9EAF2;
+  box-shadow: 6px 6px 12px #C8CAD4, -6px -6px 12px #FFFFFF;
+}
+
+.neu-raised-hover:hover {
+  box-shadow: 4px 4px 8px #C8CAD4, -4px -4px 8px #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.neu-raised-hover:active,
+.neu-raised:active {
+  box-shadow: inset 4px 4px 8px #C8CAD4, inset -4px -4px 8px #FFFFFF;
+  transform: translateY(0);
+}
+
+.neu-inset {
+  background-color: #E9EAF2;
+  box-shadow: inset 4px 4px 8px #C8CAD4, inset -4px -4px 8px #FFFFFF;
+}
+
+.neu-subtle {
+  background-color: #E9EAF2;
+  box-shadow: 3px 3px 7px #C8CAD4, -3px -3px 7px #FFFFFF;
+}
+
+.neu-subtle-hover:hover {
+  box-shadow: 2px 2px 5px #C8CAD4, -2px -2px 5px #FFFFFF;
+}
+
+.neu-pressed {
+  background-color: #E9EAF2;
+  box-shadow: inset 4px 4px 8px #C8CAD4, inset -4px -4px 8px #FFFFFF;
+}
+
+/* Primary Lavender Buttons */
+.neu-button-primary {
+  background-color: #7776B8;
+  color: #FFFFFF;
+  box-shadow: 5px 5px 10px #C8CAD4, -5px -5px 10px #FFFFFF;
+  transition: all 0.15s ease-in-out;
+}
+
+.neu-button-primary:hover:not(:disabled) {
+  background-color: #6c6ba8;
+  box-shadow: 3px 3px 7px #C8CAD4, -3px -3px 7px #FFFFFF;
+}
+
+.neu-button-primary:active:not(:disabled) {
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.28), inset -3px -3px 6px rgba(255, 255, 255, 0.25);
+  transform: translateY(1px);
+}
+
+/* Secondary Neumorphic Buttons */
+.neu-button-secondary {
+  background-color: #E9EAF2;
+  color: #34364A;
+  box-shadow: 4px 4px 9px #C8CAD4, -4px -4px 9px #FFFFFF;
+  transition: all 0.15s ease-in-out;
+}
+
+.neu-button-secondary:hover:not(:disabled) {
+  color: #7776B8;
+  box-shadow: 2px 2px 5px #C8CAD4, -2px -2px 5px #FFFFFF;
+}
+
+.neu-button-secondary:active:not(:disabled),
+.neu-button-secondary.active {
+  box-shadow: inset 3px 3px 6px #C8CAD4, inset -3px -3px 6px #FFFFFF;
+  color: #7776B8;
+}
+
+/* Inset Input Fields */
+.neu-input {
+  background-color: #E9EAF2;
+  color: #34364A;
+  box-shadow: inset 3px 3px 6px #C8CAD4, inset -3px -3px 6px #FFFFFF;
+  border: 1px solid transparent;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.neu-input:focus {
+  outline: none;
+  border-color: #7776B8;
+  box-shadow: inset 3px 3px 6px #C8CAD4, inset -3px -3px 6px #FFFFFF, 0 0 0 1px #7776B8;
+}
+
+.neu-input.error {
+  border-color: #C77D86;
+  box-shadow: inset 3px 3px 6px #C8CAD4, inset -3px -3px 6px #FFFFFF, 0 0 0 1px #C77D86;
+}
+
+.neu-input.success {
+  border-color: #6D9B83;
+}
+
+/* Custom Scrollbars in soft UI */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #E9EAF2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8CAD4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A6A5D5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  aside, header, nav, .print\:hidden {
+    display: none !important;
+  }
+  #resume-a4-document {
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
